@@ -1,6 +1,10 @@
+#Author : Bhavya Chugh
+# Using flask run a web application and insert data from web to database
+
 from flask import Flask, render_template, request
 from dbconnect import connection
 app = Flask(__name__)
+
 
 @app.route('/')
 def student():
@@ -9,7 +13,7 @@ def student():
 @app.route('/studentregister')
 def studentregister():
     try:
-        # return render_template('register.html')
+        #return render_template('register.html')
         mycursor, conn = connection()
         return "Connected"
     except Exception:
