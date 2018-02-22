@@ -1,5 +1,6 @@
 '''
-This program gets data from a wiki page using beautiful soup library in python and then puts it into mysql database. This program is tailored for the accessing wiki page only.
+This program gets data from a wiki page using beautiful soup library in python and then puts it into mysql database.
+This program is tailored for the accessing wiki page only.
 '''
 import urllib3
 from bs4 import BeautifulSoup
